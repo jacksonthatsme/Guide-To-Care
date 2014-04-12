@@ -1,0 +1,25 @@
+$height: 10em;
+#grid{
+  width: 960px;
+  margin: 0 auto;
+  @media all and (max-width:960px){
+    width: 540px;
+  }
+  .item{
+    background-color: gray;
+    width: calc(33.33% - 2em);
+    margin: 1em;
+    &.six-by-one{
+      height: $height * 6;
+    }
+    &.three-by-one{
+      height: $height * 3;
+    }
+    &.two-by-one{
+      height: $height * 2;
+    }
+    &.one-by-one{
+      height: $height * 1;
+    }
+  }
+}
